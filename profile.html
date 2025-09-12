@@ -1,42 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+        }
+
+        h2, p {
+          margin: 10px;
+        }
+
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #111111;
+        }
+
+        nav li {
+          float: left;
+        }
+
+        nav li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        nav li a:hover {
+          background-color: #D0FFCE;
+          color: black;
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="styles.css">
 <body>
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="profile.html">Profile</a> |
-        <a href="personal.html">Dashboard</a> |
-        <a href="faq.html">FAQ</a> |
-        <a href="blog.html">Blog</a> |
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
     </nav>
+
     <h1>Welcome to my Profile Page!</h1>
     <div id="aboutme">
         <h2>My name is Anastasia Stylianou</h2>
         <h3>I'm 17 years old!</h3>
-        <p>I am originally form Limassol, Cyprus</p>
+        <p>I am originally from Limassol, Cyprus.</p>
+        <p>When I was younger, I wanted to become a fashion designer, and I still aspire to find a way to connect fashion to my future job.</p>
     </div>
-    <h2>My Intrests:</h2>
-    <ul>
-        <li>I have been competing in many sports competitions ever since I was 11 years old, such as Muay Thai, swimming and triathlon.</li> <img src="images.jpeg" alt="Muay Thai" style="width:40%">
-        <li>I also have an interest in arts</li> <img src="arts.jpg" alt="Arts" style="width:60%">
-        <li>In my free time my favourite thing to do is watching movies while eating snacks</li> <img src="MovieNight.avif" alt="Movies" style="width:50%">
+
+    <p>A little bit more about me is that:</p>
+    <ul class="aboutme">
+        <li>I have 3 dogs</li>
+        <li>I used to have very peculiar pets as a kid, like a snake, an iguana, and more</li>
+        <li>I love to travel and my dream is to explore the world</li>
+        <li>I have a younger sister</li>
+        <li>I love animals and good scents</li>
+        <li>My favourite color is pink</li>
+        <li>The one thing that always makes me happy is food</li>
     </ul>
-    <div id="swot">
-        <h1>SWOT Analysis</h1>
-        <h2>Strengths:</h2>
-        <p>My strengths are my determination, when I put my mind on something I don't let go until it is done. Also, I am a very creative person, I like to think outside the box. In addition to that, I consider myself to be open minded, although I have very strong opinions I am willing to listen to, and respect every opinion there is when it comes to anything because I believe that a persons mindset constantly evolves.</p>
-        <h2>Weaknesses:</h2>
-        <p>My weaknesses are that I might need to see or hear the same thing more than twice for it to stick a landing in my brain, and when it comes to memory it is very random what I am able to keep, so I need to ask the same questions again and again to keep the information. Another weakness of mine is that I am a person who likes to speak her mind, if I see something I do not agree with I am going to talk about it.</p>
-        <h2>Opportunities:</h2>
-        <p>I see opportunities everywhere and all the time. I believe an opportunity presents itself to a person when the person chooses to see it, in my eyes, opportunities are meant to be taken because that is the way an individual moves forward in life. If I don't take an opportunity how will I change my life to the better? Why settle for okay when there is the opportunity for great?</p>
-        <h2>Threats:</h2>
-        <p>To me a threat is anything you let be a threat so if one chooses to let something or someone be a threat then there is something they fear. So in my opinion, if I choose to be optimistic then my consciousness will not allow anything to present itself as a threat.</p>
-    </div>
-    </body>
+
+    <img src="aboutme.png" alt="Collage about me" style="width:50%">
+
+    <h2>My Interests:</h2>
+    <ul class="interests">
+        <li>
+            I have been competing in many sports competitions ever since I was 11 years old, such as Muay Thai, swimming, and triathlon.
+            <br><img src="thai.jpeg" alt="Muay Thai competition" style="width:40%">
+        </li>
+        <li>
+            I also have an interest in arts. My favourite artist is Salvador Dalí!
+            <br><img src="art.jpg" alt="Salvador Dalí artwork" style="width:60%">
+        </li>
+        <li>
+            In my free time, my favourite thing to do is watching movies while eating snacks.
+            <br><img src="movies.avif" alt="Watching movies" style="width:50%">
+        </li>
+    </ul>
+
+    <h3>My Socials:</h3>
+    <ul class="socials">
+        <li><a href="https://github.com/anastasiastyl199/anastasiastyl199.github.io.git">GitHub</a></li>
+        <li><a href="https://www.instagram.com/anastasia.styl/">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@anastasiastyl_">TikTok</a></li>
+    </ul>
+</body>
 </html>

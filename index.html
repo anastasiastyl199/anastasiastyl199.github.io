@@ -1,27 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+        }
+
+        h2, p {
+          margin: 0 0 10px 0;
+        }
+
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #1E151C;
+        }
+
+        nav li {
+          float: left;
+        }
+
+        nav li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        nav li a:hover {
+          background-color: rgb(164, 5, 63);
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="styles.css">
 <body>
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="profile.html">Profile</a> |
-        <a href="personal.html">Dashboard</a> |
-        <a href="faq.html">FAQ</a> |
-        <a href="blog.html">Blog</a> |
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
     </nav>
+
     <h1>Welcome to the Home Page!</h1>
     <h2>HBO-ICT Programme</h2>
     <h3>Why I chose this programme:</h3>
     <p>I chose this programme because I have always been fascinated by technology, and how it shapes our world. I enjoy working with computers and software, and I wanted to pursue a career that allows me to be innovative and make a positive impact.</p>
     <p>I believe the HBO-ICT programme suits me because I enjoy solving problems and thinking logically. Technology constantly challenges me to learn new things and find creative solutions, which keeps me motivated. I like the idea of building projects that can actually make life easier for people and improve the way we work and communicate.</p>
-    <img src="ict2.png" alt="ICT" style="width:50%">
-    <img src="hbo-ict.png" alt="HBO-ICT" style="width:50%">
+    <p>Lastly, I chose this programme because, the HBO-ICT course can provide a mix of useful values like:</p>
+    <ol class="values">
+        <li>Broad technical foundation</li>
+        <li>Research and innovation skills</li>
+        <li>Critical thinking</li>
+    </ol>
+
+    <img src="hbo.ict2.png" alt="Students working on ICT projects" style="width:50%">
+    <img src="hbo.ict.png" alt="HBO-ICT programme logo" style="width:50%">
+
+    <h4>Some useful links:</h4> 
+    <ul class="links">
+        <li>
+            <a href="https://hz.nl/">HZ University of Applied Sciences</a>
+            <p>This is the official page of HZ University of Applied Sciences!</p>
+        </li>
+        <li>
+            <a href="https://hz.nl/en/chat-with-a-student">Talk with a student</a>
+            <p>By clicking this link you will be able to talk to one of the students which is very helpful when you feel lost!</p>
+        </li>
+    </ul>
 </body>
 </html>

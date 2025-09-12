@@ -1,20 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FAQ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+          margin: 0;
+          font-family: Arial, sans-serif;
+          max-width: 600px;
+          margin: 20px auto;
+          padding: 0 10px;
+        }
+
+        h2, p {
+          margin: 10px;
+        }
+
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #111111;
+        }
+
+        nav li {
+          float: left;
+        }
+
+        nav li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        nav li a:hover {
+          background-color: #D0FFCE;
+          color: black;
+        }
+
+        .question {
+          cursor: pointer;
+          background: #f0f0f0;
+          padding: 10px;
+          margin: 5px 0;
+          border-radius: 5px;
+        }
+
+        .answer {
+          display: none;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-left: 3px solid #007BFF;
+          background: #fafafa;
+        }
+    </style>
 </head>
 <body>
+
     <nav>
-        <a href="index.html">Home</a>|
-        <a href="profile.html">Profile</a> |
-        <a href="personal.html">Dashboard</a> |
-        <a href="faq.html">FAQ</a> |
-        <a href="blog.html">Blog</a> |
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
     </nav>
+
     <h1>FAQ</h1>
 
-    </body>
+    <div class="faq-item">
+        <div class="question">How can you print a document from your laptop at HZ?</div>
+        <div class="answer">You can print by uploading your document to the HZ Print Portal, logging in with your student account, and then releasing the print job at any HZ printer with your student card.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">How can you scan a document and send it to your laptop at HZ?</div>
+        <div class="answer">At any HZ printer, log in with your student card, choose the scan option, and send the document directly to your HZ email address or save it to a USB stick.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">How can I buy something (like when I sign up for the IT introduction event) on the HZ web shop?</div>
+        <div class="answer">Go to the HZ web shop, log in with your student account, select the product or event, add it to your cart, and pay securely online with the available payment methods.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">How can you book a project space?</div>
+        <div class="answer">You can reserve a project space via the HZ SelfService portal by logging in with your student account, selecting the location and time, and confirming your booking.</div>
+    </div>
+
+    <script>
+    const questions = document.querySelectorAll(".question");
+
+    questions.forEach(q => {
+      q.addEventListener("click", () => {
+        const answer = q.nextElementSibling;
+        answer.style.display = (answer.style.display === "block") ? "none" : "block";
+      });
+    });
+    </script>
+
+</body>
 </html>

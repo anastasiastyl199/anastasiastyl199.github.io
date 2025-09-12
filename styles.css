@@ -1,27 +1,131 @@
+body {
+    background-image: url("background.jpeg");
+    background-size: cover;           
+    background-position: center;      
+    background-attachment: fixed;     
+    font-family: 'Arial', sans-serif;
+    color: #1E151C;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
 h1 {
-    color: rgb(164, 5, 63);
+    color: #A55166;
     text-align: center;
-    font-style: bold;
+    font-weight: bold;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #1E151C; 
 }
-html {
-    font-family: 'montserrat', sans-serif;
-    font-size: larger;
-    background-color: rgb(249, 134, 186);
+
+h2, h3, h4 {
+    color: #C06378;
+    text-align: center;
+    margin-bottom: 10px;
 }
+
 #aboutme {
-    background-color: rgb(255, 204, 229);
-    border: 10px solid rgb(164, 5, 63);
-    padding: 10px;
-    margin: 10px;
+    background-color: rgba(255, 204, 229, 0.9); 
+    border: 5px solid rgb(164, 5, 63);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
 #swot {
     background-color: rgb(164, 5, 63);
-    border: 10px solid rgb(255, 204, 229);
+    border: 5px solid rgb(255, 204, 229);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 800px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
-img {
-  display: flow-root;
-  margin-left: auto;
-  margin-right: auto;
-  border: 10px solid rgb(255, 204, 229);
 
+img {
+    display: block;
+    margin: 20px auto;
+    border: 5px solid rgb(255, 204, 229);
+    border-radius: 15px;
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav li a:hover {
+    background-color: rgb(164, 5, 63);
+    color: white;
+    transform: scale(1.1);
+}
+
+ul, ol {
+    max-width: 800px;
+    margin: 10px auto 20px auto;
+    padding-left: 20px;
+}
+
+p {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.faq-item {
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 0;
+}
+
+.question {
+    cursor: pointer;
+    background: rgba(255, 204, 229, 0.9);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.question:hover {
+    background: rgb(164, 5, 63);
+    color: white;
+}
+
+.answer {
+    display: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid rgb(164, 5, 63);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 0 10px 10px 0;
 }

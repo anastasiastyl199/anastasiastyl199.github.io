@@ -1,20 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+        }
+
+        h2, p {
+          margin: 10px;
+        }
+
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #111111;
+        }
+
+        nav li {
+          float: left;
+        }
+
+        nav li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+
+        nav li a:hover {
+          background-color: #D0FFCE;
+          color: black;
+        }
+
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+
+        .grade, .credits {
+            text-align: center;
+            cursor: text;
+        }
+
+        .point {
+          display: flex;
+          align-items: center;
+          margin-bottom: 8px;
+        }
+
+        .box {
+          height: 12px;
+          width: 12px;
+          margin-right: 8px;
+        }
+
+        .notcompleted { background-color: red; }
+        .sufficient { background-color: green; }
+        .insufficient { background-color: blue; }
+    </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="profile.html">Profile</a> |
-        <a href="personal.html">Dashboard</a> |
-        <a href="faq.html">FAQ</a> |
-        <a href="blog.html">Blog</a> |
-    </nav>
-    <h1>Dashboard</h1>
 
-    </body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <h1>Dashboard</h1>
+    <!-- Table left exactly as you wrote it -->
+    <table border="1">
+        <tr>
+            <th scope="col">Block</th>
+            <th scope="col">Course</th>
+            <th scope="col">E.C.</th>
+            <th scope="col">Exam Type</th>
+            <th scope="col">Grade</th>
+            <th scope="col">Total Credits</th>
+        </tr>
+        <tr>
+            <td rowspan="4">1</td>
+            <td>Computer Science Basics (CSB)</td>
+            <td>5</td>
+            <td>Written knowledge test</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Programming Basics (PBA)</td>
+            <td>5</td>
+            <td>Written knowledge test</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Program & Career Orientation (PCO)</td>
+            <td>2.5</td>
+            <td>Presentation</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>IT Personality 1</td>
+            <td>1.25</td>
+            <td>Portfolio</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">2</td>
+            <td>Object-Oriented Programming (OOP)</td>
+            <td>10</td>
+            <td>Presentation & Written knowledge test</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Project Week</td>
+            <td>1.25</td>
+            <td>Portfolio</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>IT Personality 2</td>
+            <td>1.25</td>
+            <td>Portfolio</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">3</td>
+            <td>Framework Project 1</td>
+            <td>10</td>
+            <td>Written knowledge test, Presentation & Portfolio</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>IT Personality 3</td>
+            <td>1.25</td>
+            <td>Portfolio</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Business Understanding Basics</td>
+            <td>2.5</td>
+            <td>Video assignment</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td rowspan="3">4</td>
+            <td>Business Understanding Advanced</td>
+            <td>2.5</td>
+            <td>Video assignment</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>Framework Project 2</td>
+            <td>10</td>
+            <td>Presentation & Portfolio x2</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td>IT Personality 4</td>
+            <td>1.25</td>
+            <td>Portfolio</td>
+            <td class="grade" contenteditable="true"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Personal Professional Development Exploration</td>
+            <td>12.5</td>
+            <td>Criterion-referenced interview</td>
+            <td class="grade" contenteditable="true"></td>
+            <td class="credits" contenteditable="true"></td>
+        </tr>
+    </table>
+
+    <div class="point"><div class="box notcompleted"></div> Not yet completed</div>
+    <div class="point"><div class="box sufficient"></div> Sufficient (passed)</div>
+    <div class="point"><div class="box insufficient"></div> Insufficient (failed/retake)</div>
+
+</body>
 </html>
