@@ -25,44 +25,45 @@ h2, h3, h4 {
 }
 
 #aboutme {
-    background-color: rgba(255, 204, 229, 0.9); 
-    border: 5px solid rgb(164, 5, 63);
+    background-color: #E2B4C1; 
+    border: 5px solid #A55166;
     padding: 20px;
     margin: 20px auto;
     border-radius: 15px;
     max-width: 800px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px #1E151C;
 }
 
 #swot {
-    background-color: rgb(164, 5, 63);
-    border: 5px solid rgb(255, 204, 229);
+    background-color: #D38C9D;
+    border: 5px solid #A55166;
     padding: 20px;
     margin: 20px auto;
     border-radius: 15px;
     max-width: 800px;
     color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 10px #1E151C;
 }
 
 img {
     display: block;
     margin: 20px auto;
-    border: 5px solid rgb(255, 204, 229);
+    border: 5px solid #D38C9D;
     border-radius: 15px;
     max-width: 90%;
     height: auto;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px #1E151C;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #111111;
+    background-color: #1E151C;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    border-radius: 0px, 30px, 30px, 0px;
 }
 
 nav li {
@@ -81,7 +82,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: rgb(164, 5, 63);
+    background-color: #A55166;
     color: white;
     transform: scale(1.1);
 }
@@ -108,7 +109,7 @@ p {
 
 .question {
     cursor: pointer;
-    background: rgba(255, 204, 229, 0.9);
+    background: #F7DAE7;
     padding: 15px;
     margin: 10px 0;
     border-radius: 10px;
@@ -117,7 +118,7 @@ p {
 }
 
 .question:hover {
-    background: rgb(164, 5, 63);
+    background: #C06378;
     color: white;
 }
 
@@ -125,7 +126,7 @@ p {
     display: none;
     padding: 15px;
     margin-bottom: 10px;
-    border-left: 4px solid rgb(164, 5, 63);
-    background: rgba(255, 255, 255, 0.9);
+    border-left: 4px solid #C06378;
+    background: #A55166;
     border-radius: 0 10px 10px 0;
 }
