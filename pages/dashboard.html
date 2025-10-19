@@ -6,33 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Personal</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-         table, th, td {
-          border: 5px solid #48081c;
-          border-collapse: collapse;
-        }
-        
-        .grade, .credits {
-            text-align: center;
-            cursor: text;
-        }
-
-        .point {
-          display: flex;
-          align-items: center;
-          margin-bottom: 8px;
-        }
-
-        .box {
-          height: 12px;
-          width: 12px;
-          margin-right: 8px;
-        }
-
-        .notcompleted { background-color: #321E25; }
-        .sufficient { background-color: #C06378; }
-        .insufficient { background-color: #d2065b; }
-    </style>
 </head>
 <body>
 
@@ -47,105 +20,109 @@
     </nav>
 
     <h1>Dashboard</h1>
-    <table border="1">
-        <tr>
-            <th scope="col">Block</th>
-            <th scope="col">Course</th>
-            <th scope="col">E.C.</th>
-            <th scope="col">Exam Type</th>
-            <th scope="col">Grade</th>
-            <th scope="col">Total Credits</th>
-        </tr>
-        <tr>
-            <td rowspan="4">1</td>
-            <td>Computer Science Basics (CSB)</td>
-            <td>5</td>
-            <td>Written knowledge test</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td>Programming Basics (PBA)</td>
-            <td>5</td>
-            <td>Written knowledge test</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td>Program & Career Orientation (PCO)</td>
-            <td>2.5</td>
-            <td>Presentation</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td>IT Personality 1</td>
-            <td>1.25</td>
-            <td>Portfolio</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td rowspan="3">2</td>
-            <td>Object-Oriented Programming (OOP)</td>
-            <td>10</td>
-            <td>Presentation & Written knowledge test</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td>Project Week</td>
-            <td>1.25</td>
-            <td>Portfolio</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td>IT Personality 2</td>
-            <td>1.25</td>
-            <td>Portfolio</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td rowspan="3">3</td>
-            <td>Framework Project 1</td>
-            <td>10</td>
-            <td>Written knowledge test, Presentation & Portfolio</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td>IT Personality 3</td>
-            <td>1.25</td>
-            <td>Portfolio</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td>Business Understanding Basics</td>
-            <td>2.5</td>
-            <td>Video assignment</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td rowspan="3">4</td>
-            <td>Business Understanding Advanced</td>
-            <td>2.5</td>
-            <td>Video assignment</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td>Framework Project 2</td>
-            <td>10</td>
-            <td>Presentation & Portfolio x2</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td>IT Personality 4</td>
-            <td>1.25</td>
-            <td>Portfolio</td>
-            <td class="grade" contenteditable="true"></td>
-        </tr>
-        <tr>
-            <td colspan="2">Personal Professional Development Exploration</td>
-            <td>12.5</td>
-            <td>Criterion-referenced interview</td>
-            <td class="grade" contenteditable="true"></td>
-            <td class="credits" contenteditable="true"></td>
-        </tr>
-    </table>
+    <table border: 1px>
+    <tr>
+        <th scope="col">Block</th>
+        <th scope="col">Course</th>
+        <th scope="col">E.C.</th>
+        <th scope="col">Exam Type</th>
+        <th scope="col">Grade</th>
+        <th scope="col">Total</th>
+    </tr>
+    <tr>
+        <td rowspan="4">1</td>
+        <td>Computer Science Basics (CSB)</td>
+        <td>5</td>
+        <td>Written knowledge test</td>
+        <td class="grade" contenteditable="true"></td>
+        <td rowspan="4" class="total" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td>Programming Basics (PBA)</td>
+        <td>5</td>
+        <td>Written knowledge test</td>
+        <td class="grade" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td>Program & Career Orientation (PCO)</td>
+        <td>2.5</td>
+        <td>Presentation</td>
+        <td class="grade" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td>IT Personality 1</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td class="grade" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td rowspan="3">2</td>
+        <td>Object-Oriented Programming (OOP)</td>
+        <td>10</td>
+        <td>Presentation & Written knowledge test</td>
+        <td class="grade" contenteditable="true"></td>
+        <td rowspan="3" class="total" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td>Project Week</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td class="grade" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td>IT Personality 2</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td class="grade" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td rowspan="3">3</td>
+        <td>Framework Project 1</td>
+        <td>10</td>
+        <td>Written knowledge test, Presentation & Portfolio</td>
+        <td class="grade" contenteditable="true"></td>
+        <td rowspan="3" class="total" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td>IT Personality 3</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td class="grade" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td>Business Understanding Basics</td>
+        <td>2.5</td>
+        <td>Video assignment</td>
+        <td class="grade" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td rowspan="3">4</td>
+        <td>Business Understanding Advanced</td>
+        <td>2.5</td>
+        <td>Video assignment</td>
+        <td class="grade" contenteditable="true"></td>
+        <td rowspan="3" class="total" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td>Framework Project 2</td>
+        <td>10</td>
+        <td>Presentation & Portfolio x2</td>
+        <td class="grade" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td>IT Personality 4</td>
+        <td>1.25</td>
+        <td>Portfolio</td>
+        <td class="grade" contenteditable="true"></td>
+    </tr>
+    <tr>
+        <td colspan="2">Personal Professional Development Exploration</td>
+        <td>12.5</td>
+        <td>Criterion-referenced interview</td>
+        <td class="grade" contenteditable="true"></td>
+        <td class="total" contenteditable="true"></td>
+    </tr>
+</table>
 
     <div class="point"><div class="box notcompleted"></div> Not yet completed</div>
     <div class="point"><div class="box sufficient"></div> Sufficient (passed)</div>
